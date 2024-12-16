@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>personas</title>
 </head>
 <body>
 <table>
@@ -10,7 +10,7 @@
 			<tr>
 				<th>ID</th>
 				<th>Nombre</th>
-				<th>Correo Electrónico</th>
+				<th>Dni</th>
 				<th>eliminar</th>
 			</tr>
 		</thead>
@@ -18,7 +18,7 @@
 			<tr th:each="person : ${persons}">
 				<td th:text="${person.id}"></td>
 				<td th:text="${person.nombre}"></td>
-				<td th:text="${person.email}"></td>
+				<td th:text="${person.dni}"></td>
 				<td>
 					<form th:action="@{/person/delete/{id}(id=${persons.id})}"
 						method="delete"
