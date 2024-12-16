@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 @Entity
 @Table(name="person")
 	
-public class User_model {
+public class User {
 @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public long id;

@@ -1,6 +1,7 @@
 package com.example.demo.service;
 	import java.util.List;
 
+
 	import org.springframework.beans.factory.annotation.Autowired;
 	import org.springframework.stereotype.Service;
 
@@ -8,11 +9,11 @@ package com.example.demo.service;
 	import com.example.demo.model.*;
 
 	@Service
-public class User_service {
+public class UserService {
 
 		@Autowired
 		private User_repository repo;
-		public List<person> usuarios(){
+		public List<users> usuarios(){
 			return repo.findAll();
 			
 		}
